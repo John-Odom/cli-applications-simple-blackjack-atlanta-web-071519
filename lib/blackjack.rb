@@ -55,15 +55,21 @@ def runner
   a = initial_round
   if a < 21
     b= hit?(a)
-    display_card_total(a)
+    display_card_total(b)
     if b < 21
-      hit?(a)
-      display_card_total(b)
+      c = hit?(b)
+      display_card_total(c)
+      if b < 21
+        d = hit?(c)
+        display_card_total(d)
+      else
+        end_game(c)
+      end
     else
-      end_game
+      end_game(b)
     end
   else
-    end_game
+    end_game(a)
   end
 end
     
