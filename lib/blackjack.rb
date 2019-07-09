@@ -51,7 +51,6 @@ end
 #####################################################
 
 def runner
-  a=0
   welcome
   a = initial_round
   if a < 21
