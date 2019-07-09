@@ -51,6 +51,13 @@ end
 #####################################################
 
 def runner (question)
- return question
+  welcome
+  initial_round
+  if sum <21
+    hit?
+    display_card_total
+  else
+    end_game
+  end
 end
     
