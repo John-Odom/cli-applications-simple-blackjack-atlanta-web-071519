@@ -51,10 +51,11 @@ end
 #####################################################
 
 def runner
+  a=0
   welcome
-  initial_round
-  if initial_round <21
-    hit?
+  a = initial_round
+  if a < 21
+    hit?(a)
     display_card_total
   else
     end_game
