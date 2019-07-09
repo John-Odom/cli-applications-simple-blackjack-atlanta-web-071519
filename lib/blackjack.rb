@@ -50,7 +50,7 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-def runner (question)
+def runner
   welcome
   initial_round
   if sum <21
